@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "start": "node app.js"
-
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -18,7 +17,6 @@
     "morgan": "~1.9.1",
     "mysql2": "^3.6.1",
     "pug": "^3.0.2",
-    "punycode": "^2.3.1",
-
+    "punycode": "^2.3.1"
   }
 }
