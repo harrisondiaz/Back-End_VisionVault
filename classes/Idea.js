@@ -19,13 +19,13 @@ class Idea {
 
     static fromJson(json) {
         return new Idea({
-            IdeaID: json.ideaID || 0,
-            ThoughtID: json.thoughtID || 0,
-            IdeaTitle: json.ideaTitle || '',
-            IdeaDescription: json.ideaDescription || '',
-            IdeaImageURL: json.ideaImageURL || '',
-            Tags: json.tags || [],
-            CreatedBy: json.createdBy || '',
+            IdeaID: json.IdeaID || 0,
+            ThoughtID: json.ThoughtID || 0,
+            IdeaTitle: json.IdeaTitle || '',
+            IdeaDescription: json.IdeaDescription || '',
+            IdeaImageURL: json.IdeaImageURL || '',
+            Tags: json.Tags || [],
+            CreatedBy: json.CreatedBy || '',
         });
     }
 
