@@ -64,6 +64,7 @@ app.post('/api/newideas', async (req, res) => {
 
         const newIdea = Idea.fromJson(req.body);
         newIdea.IdeaID = newIdeaID;
+        newIdea.ThoughtID = newIdeaID;
 
 
         // Insert the new idea into the 'Ideas' collection
