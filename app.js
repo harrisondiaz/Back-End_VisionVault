@@ -77,7 +77,7 @@ app.post('/api/newideas', async (req, res) => {
             return res.status(500).json({ message: 'Error creating idea' });
         }
 
-        res.json({ message: 'Idea created successfully' });
+        res.status(200).json({ message: 'Idea created successfully' });
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: 'Internal server error' });
