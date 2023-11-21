@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT||3000;
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 const cors = require("cors");
@@ -19,7 +19,7 @@ app.use(express.json());
 
 app.use(cors("*"));
 
-//var hostname = '192.168.10.111';
+var hostname = '192.168.10.105';
 
 // Definir un endpoint
 app.get('/api/hello', (req, res) => {
@@ -50,7 +50,7 @@ app.get('/api/ideas', async (req, res) => {
 
 app.post('/api/newideas', async (req, res) => {
     try {
-        //console.log(req);
+        console.log(req.body);
         // Connect to the database
         const client = await MongoClient.connect(mongoURL, { retryWrites: true, w: 'majority' });
         const db = client.db(databaseName);
