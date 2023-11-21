@@ -68,7 +68,7 @@ app.post('/api/newideas', async (req, res) => {
         console.log(newIdea.toJson());
 
         // Insert the new idea into the 'Ideas' collection
-       // const insertResult = await ideasCollection.insertOne(newIdea.toJson());
+       const insertResult = await ideasCollection.insertOne(newIdea.toJson());
 
         // Close the connection
         client.close();
